@@ -29,6 +29,9 @@
 		4192592D2E29680400D878C3 /* Exceptions for "DSA" folder in "DSATests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				DataStructures/LinkedList/LinkedList.swift,
+				DataStructures/LinkedList/Node.swift,
+				TwoPointers/RemoveNthFromBackLinkedList.swift,
 				TwoPointers/ValidPalindrome.swift,
 			);
 			target = 419259112E29623C00D878C3 /* DSATests */;

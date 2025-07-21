@@ -1,5 +1,5 @@
 //
-// Valid Palindromw
+// Valid Palindrome
 //
 // Write a function that takes a string, s, as an input
 // and determines whether or not it is a palindrome.
@@ -14,7 +14,7 @@
 //
 
 
-public func isPalindrome(_ s: String) -> Bool {
+func isPalindrome(_ s: String) -> Bool {
   var startIndex = s.startIndex
   var endIndex = s.index(before: s.endIndex)
 
