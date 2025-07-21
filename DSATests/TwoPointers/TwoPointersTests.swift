@@ -31,3 +31,8 @@ struct TwoPointersTests {
     )
   }
 }
+
+@Test(arguments: [[1,2,0,1,2,0], [1,2,1,1,2,0]])
+func test_sortColors(colors: [Int]) {
+  #expect(sortColors(colors: colors) == colors.sorted())
+}
