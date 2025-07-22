@@ -23,6 +23,14 @@ class LinkedList<T> {
     }
   }
 
+  var tail: Node<T>? {
+    var tail = head
+    while let node = tail?.next {
+      tail = node
+    }
+    return tail
+  }
+
   func printList() {
     var current = head
     var result: [T] = []

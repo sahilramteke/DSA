@@ -52,3 +52,29 @@ func isHappyNumber(_ n: Int) -> Bool {
   }
   return false
 }
+
+//  Linked List Cycle
+//
+//  Check whether or not a linked list contains a cycle.
+//  If a cycle exists, return TRUE. Otherwise, return FALSE.
+//  The cycle means that at least one node can be reached
+//  again by traversing the next pointer.
+//
+//  Constraints:
+//  Let n be the number of nodes in a linked list.
+//    --> 0 <= n <= 500
+//    --> =10^5 <= Node.value <= 10^5
+func detectCycle(_ head: Node<Int>?) -> Bool {
+  var slow = head, fast = head
+
+  while fast != nil, fast?.next != nil {
+    slow = slow?.next
+    fast = fast?.next?.next
+
+    if slow?.value == fast?.value {
+      return true
+    }
+  }
+
+  return false
+}
