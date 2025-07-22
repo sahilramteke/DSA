@@ -30,9 +30,9 @@ struct TwoPointersTests {
       removeNthNodeFromEnd(list.head, testCase.n)?.value == testCase.expected
     )
   }
-}
 
-@Test(arguments: [[1,2,0,1,2,0], [1,2,1,1,2,0]])
-func test_sortColors(colors: [Int]) {
-  #expect(sortColors(colors: colors) == colors.sorted())
+  @Test(arguments: [[1,2,0,1,2,0], [1,2,1,1,2,0]])
+  func test_sortColors(colors: [Int]) {
+    #expect(sortColors(colors: colors) == colors.sorted())
+  }
 }

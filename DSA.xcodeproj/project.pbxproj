@@ -31,9 +31,8 @@
 			membershipExceptions = (
 				DataStructures/LinkedList/LinkedList.swift,
 				DataStructures/LinkedList/Node.swift,
-				Problems/TwoPointers/RemoveNthFromBackLinkedList.swift,
-				Problems/TwoPointers/SortColor.swift,
-				Problems/TwoPointers/ValidPalindrome.swift,
+				Problems/FastAndSlowPointers/FastAndSlowPointers.swift,
+				Problems/TwoPointers/TwoPointers.swift,
 			);
 			target = 419259112E29623C00D878C3 /* DSATests */;
 		};
