@@ -63,7 +63,7 @@ func isHappyNumber(_ n: Int) -> Bool {
 //  Constraints:
 //  Let n be the number of nodes in a linked list.
 //    --> 0 <= n <= 500
-//    --> =10^5 <= Node.value <= 10^5
+//    --> 10^5 <= Node.value <= 10^5
 func detectCycle(_ head: Node<Int>?) -> Bool {
   var slow = head, fast = head
 
@@ -77,4 +77,25 @@ func detectCycle(_ head: Node<Int>?) -> Bool {
   }
 
   return false
+}
+
+//  Middle of the Linked List
+//
+//  Given the head of a singly linked list, return the middle
+//  node of the linked list. If the number of nodes in the
+//  linked list is even, there will be two middle nodes,
+//  so return the second one.
+//
+//  Constraints:
+//  Let n be the number of nodes in a linked list.
+//    --> 0 <= n <= 100
+//    --> 1 <= Node.value <= 100
+//    --> head != nil
+func findMiddleNode(_ head: Node<Int>?) -> Node<Int>? {
+  var slow = head, fast = head?.next
+  while let node = fast {
+    slow = slow?.next
+    fast = node.next?.next
+  }
+  return slow
 }

@@ -37,4 +37,13 @@ struct FastAndSlowPointersTests {
     let linkedList = LinkedList(list)
     #expect(detectCycle(linkedList.head) == false)
   }
+
+  @Test(arguments:[
+    ([2, 98, 71, 50, 30, 80], 50),
+    ([1, 2, 3, 4, 5], 3),
+  ])
+  func test_findMiddleNode(t: (list: [Int], middle: Int)) {
+    let linkedList = LinkedList(t.list)
+    #expect(findMiddleNode(linkedList.head)?.value == t.middle)
+  }
 }
